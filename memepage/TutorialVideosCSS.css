@@ -1,0 +1,82 @@
+body {
+	background-color: blue;
+	-webkit-animation: myAnimation 5s infinite;
+	animation: myAnimation 5s infinite;
+	
+}
+
+/*Adding Animations for Chrome*/
+@keyframes 'myAnimation'{
+	50% {
+		background-color: green
+	}
+}
+
+/*Default animations for browser if webkit is not available*/
+@-webkit-keyframes 'myAnimation' {
+	50% {
+		background: url("My Pictures/friedemojimeme.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+	}
+}
+
+.content {
+	background-color: grey;
+	padding: 15px;
+	border: 10px solid white;
+	border-style: solid;
+}
+
+p {
+	margin-top: 20px;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+}
+
+.froggo {
+	-webkit-background-size: 100%;
+	padding: 50px;
+}
+
+.highlight {
+	background-color: yellow;
+	font-variant: small-caps;
+	font-weight: 600;
+	font-style: italic;
+	text-transform: uppercase;
+	text-decoration: underline line-through overline;
+	text-shadow: 5px 0 1px violet;
+}
+
+.spin {
+    margin: 100px;
+    width: 200;
+    height: 200;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+ 
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#shaq {
+	padding: 50%;
+	margin: 50%;
+}

@@ -1,0 +1,45 @@
+a:link.topLinks {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover.topLinks {
+	text-decoration: underline;
+	opacity: 0.75;
+}
+
+a:visited.topLinks {
+	text-decoration: none;
+	color: #000;
+}
+
+.topLinks {
+	font-size: 13px;
+	font-family: arial,sans-serif;
+	padding: 10px;
+	display: inline-block;
+}
+
+.topRight {
+	padding-left: 1120px;
+	padding-top: -20px;
+
+}
+
+.topLeft {
+	margin: auto;
+	width: 10px;
+	position: absolute;
+
+}
+
+#googleLogo {
+
+	object-position: center
+}
+
+.middle {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}

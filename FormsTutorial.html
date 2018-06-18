@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Forms Tutorial</title>
+</head>
+
+<body>
+
+	<form action="DUMMYFORM" method="get" oninput="invoice.value=parseInt(total.value)+parseInt(shipping.value)+parseInt(tax.value)">
+		<label for="name">Name:</label> <input type="text" name="name" placeholder="Bob Jones" required= "required"
+      	oninvalid="this.setCustomValidity('You missed something idiot.')"
+       	onvalid="this.setCustomValidity('')"><br>
+		
+		<label for="email">Email:</label>
+		<input type="text" name="email" required= "required" 
+		oninvalid="this.setCustomValidity('I had higher hopes.')"
+       	onvalid="this.setCustomValidity('')"><br>
+		
+		<label for="message">Message:</label><br>
+		
+		<!-- Can Dynamically resize -->
+		<textarea rows="10" cols="100"></textarea><br>
+		
+		
+		<hr>
+		
+		<label for="options">Packing Requirements (select all that apply): </label><br>
+		
+		<input type="checkbox" name="options" value="Goodest">Goodest<br>
+		<input type="checkbox" name="options" value="Lesser Goodest">Lesser Goodest<br>
+		<input type="checkbox" name="options" value="Lessest Goodest">Lessest Goodest<br>
+		
+		<hr>
+		
+		<label for="delivery">Shipping Preference:</label><br>
+		<!-- Name must be the same for radio buttons to work properly -->
+		<input type="radio" name="delivery" value="in store">In store<br>
+		
+		<input type="radio" name="delivery" value="not in store">Not in store<br>
+		
+		<hr>
+		
+		<label for="shipping_method">Shipping Method:</label>
+		<select name="snipping_method">
+			<optgroup label="Home">
+				<option value="home_air">Airdrop</option>
+				<option value="home_bird Carrier">Pidgeon Carrier</option>
+			</optgroup>
+		</select>
+		
+		<hr>
+		
+		<label for="source">How did you hear about us?</label>
+		<select name="source">
+			<option value="meme">Eric's Memepage</option>
+			<option value="notmeme">Other, lesser ways of knowing</option>
+		</select>
+		
+		<hr>
+		
+		<input type="submit" value="Get Contact Request">
+		
+		<hr>
+		
+		<label for="total">Subtotal:</label><br>
+<input type="text" name="total" value="0" /><br>
+
+<label for="shipping">Shipping:</label><br>
+<input type="text" name="shipping" value="9" /><br>
+
+<label for="tax">Required tax:$10</label><br>
+<input type="hidden" name="tax" value="10" /><br>
+
+
+Total for invoice: <output name="invoice" for="total tax"></output>
+		
+	</form>
+	
+</body>
+</html>
