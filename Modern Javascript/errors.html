@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var request = new XMLHttpRequest();
+
+    request.open("GET", "http://api.dailysmarty.com/posts", true);
+
+    request.onload = function() {
+        // If there is no error
+        if (request.status >= 200 && request.status <= 400) {
+            var data = JSON.parse(request.responseText);
+        } else {
+
+            }
+        }
+
+
+
+</script>>
+</html>

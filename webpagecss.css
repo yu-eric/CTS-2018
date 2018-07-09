@@ -1,0 +1,78 @@
+html {
+    font-family: 'Comic Sans MS', sans-serif;
+}
+body {
+    margin: 0px;
+}
+.navbar {
+    background: darkolivegreen;
+}
+.navbar div {
+    display: none;
+}
+.navbar .toggle,
+.navbar .brand {
+    display: inline-block;
+}
+.navbar .link {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background: darkgreen;
+    color: white;
+}
+.navbar .link:hover,
+.navbar .link:active {
+    color: darkgreen;
+    background: white;
+}
+.navbar .brand {
+    width: 10em;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar .toggle {
+    padding: 1em;
+    color: black;
+}
+@media (min-width: 48em) {
+    .navbar {
+        display: flex;
+    }
+    .navbar .left_links,
+    .navbar .right_links {
+        display: flex;
+        flex: 1;
+    }
+    .navbar .link {
+        width: auto;
+    }
+    .navbar .right_links {
+        justify-content: flex-end;
+    }
+    .navbar .toggle {
+        display: none;
+    }
+}
+@media (min-width: 48em) {
+    .navbar div {
+        display: flex;
+    }
+}
+@media (max-width: 48em) {
+    .navbar.active .toggle {
+        background: darkgreen;
+        color: white;
+    }
+    .navbar .brand {
+        text-align: left_links;
+    }
+    .navbar.active div {
+        display: block;
+    }
+}

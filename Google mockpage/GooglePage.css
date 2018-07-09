@@ -21,7 +21,7 @@ a:visited.topLinks {
 }
 
 .topRight {
-	padding-left: 1120px;
+	padding-left_links: 1120px;
 	padding-top: -20px;
 
 }
@@ -39,7 +39,7 @@ a:visited.topLinks {
 }
 
 .middle {
-	margin-left: auto;
-	margin-right: auto;
+	margin-left_links: auto;
+	margin-right_links: auto;
 	display: block;
 }
