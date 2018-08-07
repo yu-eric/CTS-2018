@@ -1,0 +1,114 @@
+@import 'components/schedule';
+@import 'components/courseLibrary';
+
+
+// 3. progress tracker component -- progressTracker.js
+// 4. CourseOption component -- courseOption.js
+// 5. EnrolledCourse component -- enrolledCourse.js
+// 6. Refactor our code.
+// 7. deploying to heroku.
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.library {
+    flex-grow: 2;
+    width: 62%;
+    max-width: 62%;
+    height: 100vh;
+    padding: 6rem;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+
+}
+
+
+
+.schedule {
+    flex-grow: 1;
+    background: linear-gradient(118.95deg, rgb(75, 219, 235) 0%, rgb(32, 255, 88) 100%);
+    width: 38%;
+    height: 100vh;
+    text-align: center;
+    padding: 12rem 6rem;
+    position: fixed;
+    right: 0;
+}
+
+
+.schedule__header {
+    border: none;
+    border-left: 1px solid white;
+    color:white;
+    font-size: 20px;
+    font-family: 'Alegreya', serif;
+    line-height: 27px;
+}
+
+.library__header {
+    border: none;
+    border-left: 1px solid #37c621;
+    color: #37c621;
+    padding: 0 25px;
+    font-family: Alegreya, serif;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 47px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0 25px;
+    margin-top: 50px;
+    padding: 0;
+    width: 120%;
+}
+ 
+ul li {
+    margin: 10px 0;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.course__title {
+    color: #4D4D4D;
+    font-family: Lato;
+    font-size: 16px;
+}
+
+//
+
+
+.course__description {
+    width: 60%;
+    padding-top: 25px;
+}
+
+.course__description-title {
+    color: #37c621;
+    font-family: Alegreya;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+
+
+.show-content {
+    display: block;
+}
+
+.hide-content {
+    display: none;
+}
+
+

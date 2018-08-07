@@ -1,0 +1,25 @@
+.picker {
+    grid-column: 5/9;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: end;
+    // background: cornflowerblue;
+
+    padding-bottom: 50px;
+
+
+    input {
+        font-size: 80px;
+        font-family: "Roboto Condensed";
+        font-weight: bold;
+        
+        color: $color-gray-one;
+        text-align: center;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid #FF1E07;
+        &:focus {
+            outline: none;
+        }
+    }
+}
